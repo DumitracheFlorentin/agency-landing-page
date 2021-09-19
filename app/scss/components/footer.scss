@@ -1,0 +1,37 @@
+.footer {
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin: 3rem 0 1rem 0;
+  }
+
+  &__nav {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    p {
+      a {
+        color: var(--d-desaturated-cyan);
+      }
+
+      &:not(:last-child) {
+        margin-right: 2.25rem;
+      }
+    }
+  }
+
+  &__share {
+    margin-bottom: 3rem;
+    i {
+      color: var(--d-desaturated-cyan);
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
