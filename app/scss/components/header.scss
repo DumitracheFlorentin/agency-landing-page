@@ -39,6 +39,7 @@
       align-items: center;
       justify-content: flex-end;
       width: 30em;
+      position: relative;
 
       @include breakpoint-down(small) {
         display: none;
@@ -86,6 +87,40 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      &__nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 4em;
+        left: 5%;
+        background-color: var(--white);
+        width: 89.8%;
+        height: 14em;
+
+        p {
+          a {
+            font-size: 1.05rem;
+            color: var(--dark-grayish-blue);
+            font-weight: 600;
+          }
+
+          &:last-child {
+            margin-bottom: 1.5rem;
+            a {
+              font-size: 0.95rem;
+              font-family: var(--font-fraunces);
+              border-radius: 25px;
+              background-color: var(--yellow);
+              padding: 1rem 2rem;
+              color: var(--v-dark-d-blue);
+              text-transform: uppercase;
+            }
+          }
+        }
       }
     }
   }
