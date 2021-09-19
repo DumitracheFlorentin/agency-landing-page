@@ -13,13 +13,19 @@
     display: flex;
     margin-top: 1rem;
     margin-bottom: 4rem;
+
     p {
       a {
         color: var(--d-desaturated-cyan);
+        transition: all 0.6s ease-in-out;
       }
 
       &:not(:last-child) {
         margin-right: 2.25rem;
+      }
+
+      &:hover > a {
+        color: var(--white);
       }
     }
   }
@@ -28,9 +34,15 @@
     margin-bottom: 3rem;
     i {
       color: var(--d-desaturated-cyan);
+      cursor: pointer;
+      transition: all 0.6s ease-in-out;
 
       &:not(:last-child) {
         margin-right: 1.5rem;
+      }
+
+      &:hover {
+        color: var(--white);
       }
     }
   }
